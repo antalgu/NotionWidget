@@ -1,9 +1,9 @@
 // Initialize counter
-let counter = localStorage.getItem('counter') || 0;
+let counter = localStorage.getItem('counter5') || 0;
 document.getElementById('counter').innerText = counter;
 
 // Initialize color
-let color = localStorage.getItem('color') || '#00ff00';
+let color = localStorage.getItem('color5') || '#00ff00';
 document.getElementById('colorPicker').value = color;
 document.getElementById('colorPicker').style.backgroundColor = color;
 document.getElementById('titleInput').style.backgroundColor = color;
@@ -14,12 +14,12 @@ document.querySelectorAll('.slot').forEach(slot => {
 
 
 // Initialize title
-let title = localStorage.getItem('title') || '';
+let title = localStorage.getItem('title5') || '';
 document.getElementById('titleInput').value = title;
 document.title = title;
 
 // Generate slots for the progress bar
-const initialNumSlots = localStorage.getItem('numSlots') || 21;
+const initialNumSlots = localStorage.getItem('numSlots5') || 21;
 document.getElementById('slotInput').value = initialNumSlots;
 changeSlots();
 
@@ -49,27 +49,27 @@ function changeSlots() {
   }
 
   updateProgressBar();
-  localStorage.setItem('numSlots', numSlots); // Save the number of slots
+  localStorage.setItem('numSlots5', numSlots); // Save the number of slots
 }
 
 function increment() {
   counter++;
   document.getElementById('counter').innerText = counter;
-  localStorage.setItem('counter', counter);
+  localStorage.setItem('counter5', counter);
   updateProgressBar();
 }
 
 function decrement() {
   counter--;
   document.getElementById('counter').innerText = counter;
-  localStorage.setItem('counter', counter);
+  localStorage.setItem('counter5', counter);
   updateProgressBar();
 }
 
 function reset() {
   counter = 0;
   document.getElementById('counter').innerText = counter;
-  localStorage.setItem('counter', counter);
+  localStorage.setItem('counter5', counter);
   updateProgressBar();
 }
 
@@ -81,12 +81,12 @@ function changeColor() {
 	document.querySelectorAll('.slot').forEach(slot => {
 	  slot.style.borderRight = `1px solid ${color}`;
 	});
-  localStorage.setItem('color', color);
+  localStorage.setItem('color5', color);
 }
 
 
 function changeTitle() {
   title = document.getElementById('titleInput').value;
   document.title = title;
-  localStorage.setItem('title', title);
+  localStorage.setItem('title5', title);
 }
