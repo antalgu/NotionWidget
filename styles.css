@@ -33,6 +33,16 @@ body {
     border-radius: 5px;
   }
   
+  .buttons {
+      flex-direction: row;
+  }
+  
+  .h1{
+    display: inline;
+    font-size: 30px;
+    vertical-align: middle;
+  }
+  
   button:hover {
     background-color: lightgreen;
     color: white;
