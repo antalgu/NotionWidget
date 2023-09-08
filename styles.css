@@ -10,6 +10,7 @@ body {
   }
   
   .widget-container {
+    position: relative;
     background-color: green;
     border-radius: 12px;
     padding: 20px;
@@ -46,5 +47,37 @@ body {
   button:hover {
     background-color: lightgreen;
     color: white;
+  }
+  
+  .top-right-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  input[type="color"] {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="text"] {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    width: 100px; 
+  }
+  
+  input[type="text"] {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100px; 
+    text-align: center; 
   }
   
