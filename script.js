@@ -3,7 +3,7 @@ let counter = localStorage.getItem('counter') || 0;
 document.getElementById('counter').innerText = counter;
 
 // Initialize color
-let color = localStorage.getItem('color') || '#ffffff';
+let color = localStorage.getItem('color') || '#00ff00';
 document.getElementById('colorPicker').value = color;
 document.getElementById('colorPicker').style.backgroundColor = color;
 document.getElementById('titleInput').style.backgroundColor = color;
@@ -11,7 +11,7 @@ document.querySelector('.widget-container').style.backgroundColor = color;
 
 
 // Initialize title
-let title = localStorage.getItem('title') || '';
+let title = localStorage.getItem('title') || 'Button';
 document.getElementById('titleInput').value = title;
 document.title = title;
 
